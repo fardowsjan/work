@@ -1,0 +1,847 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ____ start of main _____ */
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0d0d0e;
+    /* ______ start of header _______ */
+    >header{
+        width: 100%;
+        height: 30vh;
+        /* border: 4px solid gold; */
+        display: flex;
+        justify-content: center;
+        >.header-area{
+            width: 94%;
+            height: 100%;
+            /* background-color: darkblue; */
+            >section{
+                width: 100%;
+                height: 50%;
+                /* border: 3px solid red; */
+                display: flex;
+                justify-content: space-between;
+                >ul{
+                    width: 25.33%;
+                    /* background-color: orange; */
+                    display: flex;
+                    align-items: center;
+                    >li{
+                        margin-inline: 5px;
+                        width: 35px;
+                        list-style: none;
+                        /* border: 2px solid black; */
+                        text-align: center;
+                        >a{
+                            text-decoration: none;
+                            font-size: 20px;
+                            text-align: center;
+                            color: white;
+                        }
+                    }
+                }
+                /* ------ end fo ul _______ */
+                >figure{
+                    width: 44.33%;
+                    height: 100%;
+                    /* background-color: green; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                /* ______ end of figure ______ */
+                >div{
+                    width: 30.33%;
+                    height: 100%;
+                    /* background-color: darkblue; */
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    >a{
+                        width: 300px;
+                        height: 60px;
+                        border: 1px solid #e5be4aad;
+                        text-align: center;
+                        line-height: 60px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #E5BF4A;
+                        transition: .4s;
+                        &:hover{
+                            color: #fff;
+                            background-color: #E5BF4A;
+                        }
+                    }
+                }
+                /* ______ end of div _____ */
+            }
+            /* ______ end of section ______ */
+            >ul{
+                width: 100%;
+                height: 50%;
+                /* border: 3px solid purple; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >li{
+                    list-style: none;
+                    height: 100%;
+                    /* border: 2px solid green; */
+                    margin-inline: 20px;
+                    position: relative;
+                    line-height: 125px;
+                    &::after{
+                        content: '';
+                        display: block;
+                        border: 1px solid #0d0d0e;
+                        width: 0%;
+                        position: absolute;
+                        bottom: 15px;
+                        transition: .4s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        border: 1px solid #E5BF4A;
+                    }
+                    >a{
+                        font-size: 20px;
+                        height: 100%;
+                        text-transform: capitalize;
+                        font-family: "Jost", sans-serif;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: #fff;
+                        transition: .6s;
+                    }
+                    &:hover>a{
+                        color: #E5BF4A;
+                    }
+                    /* __________ end of li 1 ____________ */
+
+                    /* _______ start of mega menu _________ */
+                    &:nth-of-type(4){
+                        /* text-align: center; */
+                        width: 50px;
+                        position: relative;
+                        >ul{
+                            width: 450%;
+                            min-height: 130px;
+                            background-color: white;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .3s;
+                            position: absolute;
+                            bottom: -180px;
+                            transition: .5s;
+                            >li{
+                                padding-inline: 20px;
+                                height: 40px ;
+                                line-height: normal;
+                                list-style: none;
+                                >a{
+                                    display: flex;
+                                    text-decoration: none;
+                                    padding-top: 10px;
+                                    transition: .3s;
+                                    color: #111;
+                                    text-transform: capitalize;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    &:hover{
+                                        color: #E5BF4A;
+                                    }
+                                }
+                            }
+                        }
+                        /* _____ end of ul -_______ */
+                        &:hover>ul{
+                            opacity: 1;
+                            visibility: visible;
+                            bottom: -140px;
+                        }
+                    }
+                    /* ______ end fo mega menu ________ */
+                }
+                /* ____ end of li _____  */
+            }
+            /* _________ end of ul _______ */
+        }
+        /* _______ end of .header-area _____ */
+    }
+    /* ______ end of header _____ */
+    /* ______ start of .banner_area _______ */
+    .banner_area{
+        width: 100%;
+        height: 95vh;
+        background-image: url(IMG/h1_hero1.jpg);
+        background-size: 100% 100%;
+        >h1{
+            width: 50%;
+            font-size: 80px;
+            font-family: cursive;
+            color: #fff;
+            padding: 140px 0 0 90px;
+        }
+        /* _____ end of h1 _____ */
+        >a{
+            display: inline-block;
+            width: 180px;
+            height: 50px;
+            border: 1px solid #E5BF4A;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-family: cursive;
+            background-color: #E5BF4A;
+            color: #111;
+            transition: .4s;
+            margin: 30px 0 0 90px;
+            &:hover{
+                background-color: transparent;
+                color: #E5BF4A;
+            }
+        }
+        /* _____ end of a _____ */
+    }
+    /* _______ end of .banner_area ______ */
+    /* ________ start of .row ______ */
+    .row{
+        width: 100%;
+        height: 250px;
+        /* background-color: darkblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >h2{
+            width: 800px;
+            /* border: 3px solid red; */
+            text-align: center;
+            font-size: 40px;
+            color: #DFDFDF;
+            font-family: "Poiret One", cursive;
+            font-weight: 100;
+            font-style: italic;
+            position: relative;
+            &::after{
+                content:'';
+                display: block;
+                width: 100px;
+                border-bottom: 3px solid #E5BF4A;
+                position: absolute;
+                bottom: -40px;
+                left: 340px;
+            }
+        }
+    }
+    /* ______ end of .row ____ */
+    /* ______ start of .about-area______ */
+    .about-area{
+        width: 100%;
+        height: 70vh;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        >section{
+            width: 80%;
+            height: 100%;
+            /* border: 3px solid gold; */
+            display: flex;
+            >div{
+                width: 50%;
+                height: 100%;
+                /* background-color: darkblue; */
+                >h3{
+                    color: #E5BF4A;
+                    width: 460px;
+                    font-family: "Poiret One", cursive;
+                    font-size: 30px;
+                    margin-top: 50px;
+                    text-transform: capitalize;
+                }
+                >p{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: "poiret One", cursive;
+                    margin-top: 10px;
+                    text-transform: capitalize;
+                }
+            }
+            /* _____- end of section _____ */
+            >figure{
+                width: 50%;
+                height: 100%;
+                /* background-color: darkcyan; */
+                >img{
+                    margin-top: 60px;
+                    margin-left: 20px;
+                }
+            }
+            /* _____ end of figure ______ */
+        }
+        /* _____- end of section ______ */
+    }
+    /* _______ end of .about-area _______ */
+    /* _____- start of #img_items _____ */
+    #img_items{
+        width: 100%;
+        height: 68vh;
+        /* background-color: darkblue; */
+        display: flex;
+        justify-content: center;
+        position: relative;
+        >div{
+            width: 92%;
+            height: 100%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+            >figure{
+                width:430px;
+                height: 100%;
+                /* border: 3px solid darkblue; */
+                position: relative;
+                &::after{
+                    content:'add to card';
+                    display: block;
+                    width: 100%;
+                    height: 0px;
+                    text-align: center;
+                    line-height: 60px;
+                    color: transparent;
+                    font-family:"Poiret One", cursive;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    background-color: #E5BF4A;
+                    position: absolute;
+                    bottom: 110px;
+                    transition: .4s;
+                }
+                &:hover::after{
+                    /* content:'add to card'; */
+                    height: 60px;
+                    color: #111;
+                }
+                >img{
+                    width: 100%;
+                }
+                >figcaption{
+                    width: 100%;
+                    height: 85px;
+                    /* border: 3px solid purple; */
+                    >a{
+                        font-size: 30px;
+                        text-decoration: none;
+                        font-family: "Poiret One", cursive;
+                        color: #fff;
+                        text-transform: capitalize;
+                    }
+                    >span{
+                        font-size: 25px;
+                        color: #E5BF4A;
+                    }
+                }
+            }
+            /* _______ end of figure ____ */
+            >a{
+                font-size: 40px;
+                color: #e5be4aaa;
+                transition: .2s;
+                &:nth-of-type(1){
+                    position: absolute;
+                    right: 22px;
+                    bottom: 170px;
+                }
+                &:nth-of-type(2){
+                    position: absolute;
+                    left: 22px;
+                    bottom: 170px;
+                }
+                &:hover{
+                    color: #E5BF4A;
+                }
+            }
+            /* ______ end of a ______ */
+        }
+        /* ______ end of div ______ */
+    }
+    /* _______ end of #img_items ______ */
+    /* _____ start of .video ______  */
+    .video{
+        width: 100%;
+        height: 90ch;
+        /* border: 3px solid gold; */
+        display: flex;
+        justify-content: center;
+        >figure{
+            width: 85%;
+            height: 100%;
+            padding-top: 60px;
+            position: relative;
+            >img{
+                width: 100%;
+                /* height: 100%; */
+
+            }
+            /* ____ end of img _____ */
+            >div{
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                background-color: #e5be4a44;
+                border-radius: 50%;
+                bottom: 230px;
+                right:490px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >a{
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 50px;
+                    background-color: #E5BF4A;
+                    color: #333;
+                    transition: .4s;
+                    &:hover{
+                        background-color: #fff;
+                    }
+                }
+            }
+            /* ____ end of div _____ */
+        }
+        /* _____ end of figure _____ */
+    }
+    /* _______ end of .video _____  */
+    /* _____ start of .about_team _____- */
+    .customers{
+        width: 100%;
+        height: 80vh;
+        /* border: 3px solid red; */
+        display: flex;
+        justify-content: center;
+        >section{
+            width: 90%;
+            height: 100%;
+            /* border: 2px solid gold; */
+            >.text{
+                width: 100%;
+                height: 30%;
+                /* background-color: darkblue; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >h3{
+                    font-size: 50px;
+                    color: #DFDFDF;
+                    font-family: cursive;
+                }
+            }
+            /* _____ end of .text _____ */
+            >div{
+                width: 100%;
+                height: 70%;
+                /* background-color: purple; */
+                display: flex;
+                >section{
+                    width: 33.33%;
+                    height: 100%;
+                    border: 1px solid rgba(128, 128, 128, 0.464);
+                    &:first-child{
+                        border-left: none;
+                    }
+                    &:last-child{
+                        border-right: none;
+                    }
+                    >ul{
+                        display: flex;
+                        padding-top: 20px;
+                        >li{
+                            list-style: none;
+                            font-size: 20px;
+                            >i{
+                                color: #E5BF4A;
+                                padding-inline: 3px;
+                            }
+                        }
+                    }
+                    /* ____ end of ul ______ */
+                    >p{
+                        font-size: 30px;
+                        font-family: cursive;
+                        color: #DFDFDF;
+                        padding-top: 20px;
+                    }
+                    /* ____ end of p _____ */
+                    >figure{
+                        display: flex;
+                        padding-top: 20px;
+                        >img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            object-fit: cover;
+                            margin-left: 20px;
+                        }
+                        >p{
+                            font-size: 20px;
+                            color: #DFDFDF;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            margin: 20px 0 0 20px;
+                            text-transform: capitalize;
+                        }
+                    }
+                    /* ____ end of figure _____ */
+                }
+                /* ___- end of section _____ */
+            }
+            /* ____ end of div ____ */
+        }
+        /* _____ end of section _____ */
+    }
+    /* _____ end of .about_team ____ */
+    /* _____ start of .about_blog _______ */
+    .about_blog{
+        width: 100%;
+        height: 100vh;
+        /* border: 3px solid red; */
+        margin-top: 20px;
+        display: block;
+        >section{
+            width: 100%;
+            height: 50%;
+            /* border: 3px solid blue; */
+            &:nth-of-type(1){
+                height: 35%;
+                display: flex;
+                justify-content: center;
+                >div{
+                    width: 90%;
+                    height: 100%;
+                    /* background-color: purple; */
+                    display:flex;
+                    justify-content: flex-end;
+                    justify-content: space-between;
+                    align-items: center;
+                    >h3{
+                        color: #DFDFDF;
+                        font-family: cursive;
+                        font-size: 50px;
+                        text-transform: capitalize;
+                    }
+                    >a{
+                        width: 200px;
+                        height: 70px;
+                        border: 1px solid #E5BF4A;
+                        background-color: #E5BF4A;
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 70px;
+                        text-decoration: none;
+                        color: #DFDFDF;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        text-transform: capitalize;
+                        transition: .4s;
+                        &:hover{
+                            color: #E5BF4A;
+                            background-color: transparent;
+                        }
+                    }
+                }
+                /* ___ end of div _____ */
+            }
+            /* ____ end of section 1 _____- */
+            &:nth-of-type(2){
+                width: 100%;
+                height: 55%;
+                display: flex;
+                justify-content: space-between;
+                >figure{
+                    width: 700px;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                    display: flex;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    >figcaption{
+                        border: 2px solid rgba(128, 128, 128, 0.414);
+                        border-left: none;
+                        >h3{
+                            color: #edba22;
+                            font-family: cursive;
+                            padding: 20px 0 0 10px;
+                        }
+                        >p{
+                            color: #DFDFDF;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            padding: 20px 0 0 10px;
+                        }
+                        >a{
+                            display: inline-block;
+                            width: 100px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            text-transform: capitalize;
+                            color: #edba22;
+                            border-bottom: 1px solid #edba22;
+                            text-decoration: none;
+                            margin: 20px 0 0 10px;
+                        }
+                    }
+                    /* ____- end of figcaption ____ */
+                }
+                /* ____ end of figure ____ */
+            }
+            /* ____ end of section 2 ____ */
+        }
+        /* ____ end of section ____ */
+    }
+    /* _____ end of .about_blog _____ */
+    /* _____ start of .instagram ____ */
+    .instagram{
+        width: 100%;
+        height: 30vh;
+        /* border: 2px solid gold; */
+        >div{
+            width: 100%;
+            height: 50%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >h3{
+                font-size: 35px;
+                color: #fff;
+                font-family: cursive;
+                text-transform: capitalize;
+            }
+            /* ___ end of h3 ____ */
+            >a{
+                text-decoration: none;
+                width: 200px;
+                height: 60px;
+                border: 1px solid #E5BF4A;
+                text-align: center;
+                line-height: 60px;
+                color: #edba22;
+                font-size: 25px;
+                >i{
+                    padding-inline: 10px;
+                }
+            }
+            /* -_____ end of a ____ */
+        }
+        /* ____ end of div _____ */
+    }
+    /* _____ end of .instagram _____ */
+    /* ____ start of .gallary ____ */
+    .gallary{
+        width: 100%;
+        height: 55vh;
+        /* border: 3px solid red; */
+        display: flex;
+        justify-content: center;
+        >div{
+            width: 90%;
+            /* height: 100%;background-color: darkblue; */
+            display: flex;
+            >figure{
+                width: 312px;
+                height: 250px;
+                /* border: 2px solid green; */
+                margin-inline: 10px;
+                margin-top: 40px;
+            }
+        }
+        /* ______ end of div _____ */
+    }
+    /* ____ end of .gallary ____ */
+    /* ____ start of .footer-menu ______ */
+    .footer-menu{
+        width: 100%;
+        height: 27vh;
+        display: flex;
+        justify-content: center;
+        >div{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+            >ul{
+                display: flex;
+                >li{
+                    list-style: none;
+                    width: 100px;
+                    /* border: 2px solid blue; */
+                    margin-inline: 10px;
+                    >a{
+                        width: 100%;
+                        text-decoration: none;
+                        color: #DFDFDF;
+                        font-size: 27px;
+                        font-family: cursive;
+                        text-transform: capitalize;
+                        padding-inline: 12px;
+                        &:hover{
+                            color: #E5BF4A;
+                        }
+                        &::after{
+                            content:'';
+                            display: block;
+                            width: 0%;
+                            border: 2px solid #0d0d0e;
+                            transition: .6s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                            border: 2px solid #edba22;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* _____ end of .footer-menu _____ */
+    /* ____ start of footer ____ */
+    footer{
+        width: 100%;
+        height: 55vh;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        >section{
+            width: 90%;
+            height: 100%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.48);
+            display: flex;
+            >div{
+                width: 100%;
+                height: 100%;
+                /* display: flex; */
+                &:nth-of-type(1){
+                    width:290vh;
+                    height: 100%;
+                    /* border: 2px solid gold; */
+                    >p{
+                        font-size: 20px;
+                        color: #DFDFDF;
+                        font-family: cursive;
+                        text-transform: capitalize;
+                        margin-top: 70px;
+                    }
+                    >a{
+                        display: inline-block;
+                        text-decoration: none;
+                        width: 170px;
+                        height: 50px;
+                        border: 1px solid #ffffff2c;
+                        text-align: center;
+                        line-height: 50px;
+                        color: #DFDFDF;
+                        margin-top: 70px;
+                        margin-inline: 6px;
+                        transition: .4s;
+                        >i{
+                            padding-inline: 10px;
+                        }
+                        &:hover{
+                            border: 1px solid #edba22;
+                            color: #edba22;
+                        }
+                    }
+                }
+                /* ____ end of div 1 _____ */
+                &:nth-of-type(2){
+                    width: 180vh;
+                    height: 100%;
+                    /* border: 2px solid green; */
+                    >a{
+                        display: inline-block;
+                        font-size: 40px;
+                        color: #FFFFFF;
+                        margin: 70px 0 0 70px;
+                    }
+                    >h4{
+                        font-size: 30px;
+                        font-family: cursive;
+                        color: #E5BF4A;
+                        text-transform: capitalize;
+                        margin: 0px 0 0 70px;
+                    }
+                    >p{
+                        color: #ffffff;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                        margin: 0px 0 0 70px;
+                    }
+                }
+                /* -___ end of div 2 ____ */
+                &:nth-of-type(3){
+                    width: 180vh;
+                    height: 100%;
+                    /* border: 2px solid green; */
+                    >a{
+                        display: inline-block;
+                        font-size: 40px;
+                        color: #FFFFFF;
+                        margin: 70px 0 0 70px;
+                    }
+                    >h4{
+                        font-size: 30px;
+                        font-family: cursive;
+                        color: #E5BF4A;
+                        text-transform: capitalize;
+                        margin: 0px 0 0 70px;
+                    }
+                    >p{
+                        color: #ffffff;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                        margin: 0px 0 0 70px;
+                    }
+                }
+                /* _____ end of div 3 _____ */
+            }
+            /* ____ end of div ____ */
+        }
+        /* ____ end of section ____ */
+    }
+    /* ____ end of footer ____ */
+    /* _____ start of .end-footer _____ */
+    .end-footer{
+        width: 100%;
+        height: 60px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >span{
+            color: #DFDFDF;
+            text-transform: capitalize;
+            font-size: 20px;
+            >a{
+                color: #E5BF4A;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: cursive;
+            }
+        }
+        /* ____ end of .end-footer _____ */
+    }
+    /* _____ end of .end-footer____ */
+}
+/* ____ end of main ____ */
